@@ -1,0 +1,53 @@
+PROFESSIONAL NAIL SERVICE:
+   Service name                     | Full set  | Fill in
+- Acrylic nails                     | $45 & up  | 35 & up
+- Acrylic fill                      | 55 & up   | 45 & up
+- Pink and white                    | 60 & up   | 55 & up
+- Pink only fill White tips         | 48 & up   | 35 & up
+- UV gel nails with regular         | 50 & up   | 40 & up
+- UV gel nails with gel color       | 60 & up   | 50 & up
+- Healthy nails with color          | 50 & up   | 
+- Healthy nails with gel color      | 55 & up   | 48 & up
+- Healthy nail with pink & white    | 60 & up   |
+- Ombre                             | 70 & up   | 60 & up
+
+PENDICURE SERVICES:
+    Service name
+- Gel color only toes               | 30
+- Spa pedicure with hot towel       | 35 & up
+- Spa pedicure with gel color       | 50 & up
+- Spa pedicure & manicure           | 50 & up
+- Spa pedicure & manicure with Gel  | 85 & up
+- Deluxe spa pedicure               | 45 & up
+- Super spa pedicure                | 55 & up
+- Jelly pedicure                    | 65 & up
+- Toe nail cut                      | 15
+
+MANICURE SERVICES:
+    Service name
+- Manicure                          | 20 & up
+- French manicure                   | 25 & up
+- Gel manicure                      | 35 & up
+- Gel french manicure               | 40 & up
+- Gel color only nails              | 28 & up
+- Fingernail cut                    | 13
+
+
+WAXING SERVICES:
+    Service name
+- Facial                            | 70 - 1 hour
+- Express Facial                    | 40 - 30 min
+- Eyebrows                          | 12
+- Lip                               | 8
+- Chin                              | 12 & up
+- Eyebrow, lip & Chin               | 32
+- Bikini                            | 35 & up
+- Full face                         | 45 & up
+- Under arms                        | 30 & up
+- Half arms                         | 35 & up
+- Full arms                         | 50 & up
+- Half legs                         | 40 & up
+- Full legs                         | 60 & up
+- Chest                             | 40 & up
+- Back                              | 60 & up
+- Brazilian                         | 60 & up

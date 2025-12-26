@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<!-- 
+  HTML DOCUMENT TYPE DECLARATION
+  This tells the browser we're using HTML5 (the latest version)
+-->
+<html lang="en">
+<head>
+    <!-- 
+      METADATA SECTION
+      Information about the page that doesn't appear on the page itself
+    -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 encoding supports all characters from all languages -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+      VIEWPORT META TAG
+      Makes the website responsive - it will adjust to different screen sizes
+      (phones, tablets, desktops)
+    -->
+    
+    <meta name="description" content="Treasure Coast Nail & Spa- Professional nail services and spa treatments">
+    <!-- Description for search engines -->
+    
+    <title>Treasure Coast Nail & Spa</title>
+    <!-- The text that appears in the browser tab -->
+    
+    <!-- Link to our external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css?v=2">
+    
+    <!-- 
+      GOOGLE FONTS
+      We're importing a beautiful font from Google Fonts
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Lottie library for bird.json animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    <!-- 
+      NAVIGATION BAR
+      Semantic HTML: <nav> tells screen readers and search engines this is navigation
+    -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo/Brand name -->
+            <div class="logo">
+                <h1>💅 Treasure Coast Nails & Spa</h1>
+            </div>
+            
+            <!-- 
+              NAVIGATION MENU
+              We use <ul> (unordered list) for navigation items
+              This is semantic HTML - nav links are logically a list
+            -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- 
+              MOBILE MENU BUTTON (Hamburger icon)
+              Only visible on mobile devices
+            -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 
+      HERO SECTION
+      The large banner area at the top of the page
+      Semantic HTML: <header> indicates this is a header section
+    -->
+    <header id="home" class="hero">
+        <!-- Background image and model image -->
+        <img src="image/model.png" alt="Manicured hands and feet" class="hero-model-image">
+        
+        <!-- Seagulls flying animation (optional - can be removed if not needed) -->
+        <div class="seagull seagull-1" id="seagull1"></div>
+        <div class="seagull seagull-2" id="seagull2"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Treasure Coast Nails & Spa</h1>
+            <p class="hero-subtitle">Your Oasis for Relaxing & Peaceful Nail Care</p>
+            <a href="tel:7726923446" class="btn btn-hero">Call to Book</a>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Us</h2>
+                    <p>
+                        Welcome to Treasure Coast Nail & Spa, where we've been providing 
+                        exceptional nail care and spa services since 2015. Our friendly staff 
+                        and experienced technicians are dedicated to making you look and feel your best.
+                    </p>
+                    <p>
+                        This is a peaceful place that will satisfy all your nail care needs. 
+                        We use only the highest quality products and stay up-to-date with 
+                        the latest trends and techniques in nail art and design.
+                    </p>
+                    <ul class="about-features">
+                        <li>✨ Friendly, professional staff</li>
+                        <li>✨ Premium products</li>
+                        <li>✨ Clean, peaceful environment</li>
+                        <li>✨ Custom nail art designs</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <!-- In a real site, this would be an <img> tag with a photo -->
+                        🏪 Salon Photo
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+      SERVICES SECTION
+      Semantic HTML: <section> groups related content
+    -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Professional nail care and spa treatments</p>
+            
+            <!-- 
+              SERVICES GRID
+              Using a grid layout to display service cards
+            -->
+            <div class="services-grid">
+                <!-- Service Card 1: Manicure -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/manicure.png?v=2" alt="Manicure icon">
+                    </div>
+                    <h3>Manicure</h3>
+                    <p>Classic and gel manicures for beautiful, healthy nails</p>
+                    <span class="service-price">Starting at $20</span>
+                </div>
+                
+                <!-- Service Card 2: Pedicure -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/pedicure.png?v=2" alt="Pedicure icon">
+                    </div>
+                    <h3>Pedicure</h3>
+                    <p>Relaxing pedicures with nail art options</p>
+                    <span class="service-price">Starting at $35</span>
+                </div>
+                
+                <!-- Service Card 3: Professional Nail Services -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/professionalnail.png?v=2" alt="Professional nail services icon">
+                    </div>
+                    <h3>Professional Nail Services</h3>
+                    <p>Healthy nail care, acrylic nails, dip nails, and gel builder treatments</p>
+                    <span class="service-price">Starting at $45</span>
+                </div>
+                
+                <!-- Service Card 4: Waxing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/waxing.png?v=2" alt="Waxing icon">
+                    </div>
+                    <h3>Waxing</h3>
+                    <p>Professional hair removal services for smooth, silky skin</p>
+                    <span class="service-price">Starting at $8</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES MENU/PRICING SECTION -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Services & Pricing</h2>
+            <p class="section-subtitle">Comprehensive menu of our services</p>
+            
+            <div class="menu-grid">
+                <!-- Manicure Services -->
+                <div class="menu-category">
+                    <h3 class="menu-category-title">💅 Manicure Services</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Manicure</span>
+                            </div>
+                            <span class="menu-item-price">$20 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">French manicure</span>
+                            </div>
+                            <span class="menu-item-price">$25 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Gel manicure</span>
+                            </div>
+                            <span class="menu-item-price">$35 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Gel french manicure</span>
+                            </div>
+                            <span class="menu-item-price">$40 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Gel color only nails</span>
+                            </div>
+                            <span class="menu-item-price">$28 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Fingernail cut</span>
+                            </div>
+                            <span class="menu-item-price">$13</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pedicure Services -->
+                <div class="menu-category">
+                    <h3 class="menu-category-title">🦶 Pedicure Services</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Gel color only toes</span>
+                            </div>
+                            <span class="menu-item-price">$30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Spa pedicure with hot towel</span>
+                            </div>
+                            <span class="menu-item-price">$35 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Spa pedicure with gel color</span>
+                            </div>
+                            <span class="menu-item-price">$50 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Spa pedicure & manicure</span>
+                            </div>
+                            <span class="menu-item-price">$50 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Spa pedicure & manicure with Gel</span>
+                            </div>
+                            <span class="menu-item-price">$85 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Deluxe spa pedicure</span>
+                            </div>
+                            <span class="menu-item-price">$45 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Super spa pedicure</span>
+                            </div>
+                            <span class="menu-item-price">$55 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Jelly pedicure</span>
+                            </div>
+                            <span class="menu-item-price">$65 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Toe nail cut</span>
+                            </div>
+                            <span class="menu-item-price">$15</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Nail Services -->
+                <div class="menu-category menu-category-two-column">
+                    <h3 class="menu-category-title">✨ Professional Nail Services</h3>
+                    <div class="menu-items">
+                        <div class="menu-item menu-item-header">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name"><strong>Service Name</strong></span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price-label"><strong>Full Set</strong></span>
+                                <span class="menu-item-price-label"><strong>Fill</strong></span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Acrylic nails</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$45 & up</span>
+                                <span class="menu-item-price">$35 & up</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Acrylic fill</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$55 & up</span>
+                                <span class="menu-item-price">$45 & up</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Pink and white</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$60 & up</span>
+                                <span class="menu-item-price">$55 & up</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Pink only fill White tips</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$48 & up</span>
+                                <span class="menu-item-price">$35 & up</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">UV gel nails with regular</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$50 & up</span>
+                                <span class="menu-item-price">$40 & up</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">UV gel nails with gel color</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$60 & up</span>
+                                <span class="menu-item-price">$50 & up</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Healthy nails with color</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$50 & up</span>
+                                <span class="menu-item-price">—</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Healthy nails with gel color</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$55 & up</span>
+                                <span class="menu-item-price">$48 & up</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Healthy nail with pink & white</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$60 & up</span>
+                                <span class="menu-item-price">—</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Ombre</span>
+                            </div>
+                            <div class="menu-item-prices-two">
+                                <span class="menu-item-price">$70 & up</span>
+                                <span class="menu-item-price">$60 & up</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Waxing Services -->
+                <div class="menu-category">
+                    <h3 class="menu-category-title">✨ Waxing Services</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Facial</span>
+                            </div>
+                            <span class="menu-item-price">$70 - 1 hour</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Express Facial</span>
+                            </div>
+                            <span class="menu-item-price">$40 - 30 min</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Eyebrows</span>
+                            </div>
+                            <span class="menu-item-price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Lip</span>
+                            </div>
+                            <span class="menu-item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Chin</span>
+                            </div>
+                            <span class="menu-item-price">$12 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Eyebrow, lip & Chin</span>
+                            </div>
+                            <span class="menu-item-price">$32</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Bikini</span>
+                            </div>
+                            <span class="menu-item-price">$35 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Full face</span>
+                            </div>
+                            <span class="menu-item-price">$45 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Under arms</span>
+                            </div>
+                            <span class="menu-item-price">$30 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Half arms</span>
+                            </div>
+                            <span class="menu-item-price">$35 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Full arms</span>
+                            </div>
+                            <span class="menu-item-price">$50 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Half legs</span>
+                            </div>
+                            <span class="menu-item-price">$40 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Full legs</span>
+                            </div>
+                            <span class="menu-item-price">$60 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Chest</span>
+                            </div>
+                            <span class="menu-item-price">$40 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Back</span>
+                            </div>
+                            <span class="menu-item-price">$60 & up</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <span class="menu-item-name">Brazilian</span>
+                            </div>
+                            <span class="menu-item-price">$60 & up</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <p class="section-subtitle">See our beautiful nail art creations</p>
+            
+            <!-- 
+              GALLERY GRID
+              Using CSS Grid for responsive image layout
+            -->
+            <div class="gallery-grid">
+                <!-- 
+                  Placeholder images using placeholder.com
+                  In a real website, you'd replace these with actual photos
+                -->
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="gallery-overlay">Elegant French Tips</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="gallery-overlay">Floral Nail Art</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="gallery-overlay">Ocean Themed</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <div class="gallery-overlay">Gradient Magic</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="gallery-overlay">Sunset Vibes</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <div class="gallery-overlay">Galaxy Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Call us to book your appointment</p>
+            
+            <div class="contact-content">
+                <!-- Call to Book Section -->
+                <div class="contact-form">
+                    <h3>Book Your Appointment</h3>
+                    <p>We're excited to serve you! Please call us to schedule your appointment.</p>
+                    <a href="tel:7726923446" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-block;">
+                        📞 Call (772) 692-3446
+                    </a>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <div class="info-item">
+                        <strong>📍 Address:</strong>
+                        <p>3555 NW Federal Highway<br>Jensen Beach, FL 34957</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <strong>📞 Phone:</strong>
+                        <p><a href="tel:7726923446">(772) 692-3446</a></p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <strong>🕒 Hours:</strong>
+                        <p>
+                            Monday - Saturday: 9:00 AM - 7:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Treasure Coast Nail & Spa. All rights reserved.</p>
+            <p class="footer-note">Built with ❤️ to teach web development</p>
+        </div>
+    </footer>
+
+    <!-- 
+      JAVASCRIPT FILE
+      Scripts are usually placed at the end of the body
+      This ensures the HTML loads before JavaScript runs
+    -->
+    <script src="script.js"></script>
+</body>
+</html>
